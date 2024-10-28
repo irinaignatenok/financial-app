@@ -33,16 +33,29 @@ export default function App() {
         initialRouteName='Transactions'
         screenOptions={({ route }) => ({
           tabBarActiveTintColor: '#4CD080',
-          tabBarInactiveTintColor: '#4CD080',
-          tabBarInactiveTintColor: "#105D38",
+          tabBarInactiveTintColor: '#105D38',
+          tabBarStyle: {
+            backgroundColor: '#fff',
+            height: 70,
+            paddingBottom: 10,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 5 },
+            shadowOpacity: 0.1,
+            shadowRadius: 10,
+            // elevation: 5,
+          },
+          tabBarLabelStyle: {
+            fontSize: 14,
+            fontWeight: 'bold',
+          },
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === 'Transactions') {
-              iconName = focused ? 'money' : 'money'
+              iconName = focused ? 'money' : 'money';
             } else {
-              iconName = focused ? 'file' : 'file-text'
+              iconName = focused ? 'file' : 'file-text';
             }
-            return <FontAwesome name={iconName} size={24} color={color} />
+            return <FontAwesome name={iconName} size={size} color={color} />;
           }
         })}
       >
@@ -57,11 +70,11 @@ export default function App() {
 
         <Tab.Screen
           name="Total">
-          {(props) => {
+          {(props) => (
             <Summary
               {...props}
               transactions={transactions} />
-          }}
+          )}
         </Tab.Screen>
 
 
