@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native';
+import styles from './styles';
 
 export default function TransactionItem({ transaction }) {
     return (
-        <View>
-            <Text>{transaction.name}</Text>
-            <Text>${transaction.amount}</Text>
-            <Text>{transaction.date}</Text>
+        <View style={styles.container}>
+            <Text style={styles.name}>{transaction.name}</Text>
+            <Text style={styles.amount}>${transaction.amount}</Text>
+            <Text style={styles.date}>{transaction.date}</Text>
         </View>
     );
 }
