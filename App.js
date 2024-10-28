@@ -20,7 +20,15 @@ export default function App() {
     const transactions = [
       { id: '1', name: 'Groceries', amount: 50, date: '2024-10-01' },
       { id: '2', name: 'Electricity Bill', amount: 100, date: '2024-10-05' },
-      // Add more transactions as needed
+      { id: '3', name: 'Internet Subscription', amount: 60, date: '2024-10-07' },
+      { id: '4', name: 'Gasoline', amount: 40, date: '2024-10-08' },
+      { id: '5', name: 'Dinner Out', amount: 75, date: '2024-10-09' },
+      { id: '6', name: 'Rent', amount: 1200, date: '2024-10-01' },
+      { id: '7', name: 'Gym Membership', amount: 35, date: '2024-10-02' },
+      { id: '8', name: 'Movie Tickets', amount: 30, date: '2024-10-10' },
+      { id: '9', name: 'Shopping', amount: 150, date: '2024-10-11' },
+      { id: '10', name: 'Pet Supplies', amount: 145, date: '2024-10-12' }
+
     ]
     setTransactions(transactions)
   }, [])

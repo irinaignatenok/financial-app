@@ -2,7 +2,7 @@ import { View, Text } from 'react-native';
 import styles from './styles';
 
 export default function Details({ route }) {
-    // Access the transaction data passed through navigation
+
     const { transaction } = route.params;
 
     return (

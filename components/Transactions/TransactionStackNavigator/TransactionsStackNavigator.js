@@ -1,13 +1,12 @@
-import { NavigationContainer } from "@react-navigation/native";
+
 import TransactionList from "./TransactionList/TransactionList";
-import { View, Text } from 'react-native';
-import { CreateNativeStackNavigation, createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Details from './Details/Details';
 
 const Stack = createNativeStackNavigator()
 export default function TransactionsStackNavigator({ navigation, route, transactions }) {
     return (
-        // <NavigationContainer>
+
         <Stack.Navigator
             screenOptions={{
                 headerShown: true,
@@ -32,7 +31,7 @@ export default function TransactionsStackNavigator({ navigation, route, transact
 
             />
         </Stack.Navigator>
-        // </NavigationContainer>
+
 
 
     );

@@ -1,4 +1,4 @@
-import { Pressable, View, Text, FlatList } from 'react-native';
+import { Pressable, View, FlatList } from 'react-native';
 import TransactionItem from './TransactionItem/TransactionItem.js';
 
 export default function TransactionList({ navigation, route, transactions }) {
